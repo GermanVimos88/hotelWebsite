@@ -1,0 +1,79 @@
+.slider {
+    overflow: hidden;
+    position:sticky;
+}
+
+.slider img {
+    width: 1000px;
+    height: 500px;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit:cover;
+}
+
+.control-btn .next {
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    right: 5%;
+}
+
+.control-btn .prev {
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    left: 5%;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+/* ------  slide-form -------------  */
+
+.slide-form h2 {
+    margin-top: 30px;
+}
+
+.slide-form {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 35%;
+    height: 90%;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.slide-form input {
+    margin-top: 20px;
+}
+
+.slide-form .flex_space input:nth-child(odd) {
+    margin-right: 20px;
+}
+
+.slide-form .submit {
+    background-color: #31b675;
+}
+
+/* ------  slide-form -------------  */
+
+@media screen and (max-width: 768px) {
+    .slide-form {
+        top: 55%;
+        width: 45%;
+        height: 100%;
+
+    }
+    
+}
